@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    
+   
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+    <title>CORONA-PLOTTING BY NAIYA</title>
+</head>
+
+<body>
+    <div class="container">
+    <h1> CORONA CASES AND DEATHS IN THE WORLD --BY NAIYA</h1> 
+</div>
+       
+    <div id='map' style='width: 100vw; height: 100vh;'></div>
+    <footer>
+        ALL RIGHTS RESERVED ||  COVID-19</footer>
+
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibmFpeWFqYW5pdmlqYXkiLCJhIjoiY2wzdHM4Z20xMWNhdzNrcWV0cGd4dDA1cyJ9.YctBcL0HV-Eq5vNJ3puUvg';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    zoom:1,
+    center:[0,40]
+
+    });
+    </script>
+    <script src="index.js"></script>
+
+</html>
